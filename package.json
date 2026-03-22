@@ -1,0 +1,38 @@
+{
+  "name": "@vspatabuga/porto-zero-trust",
+  "version": "1.0.0",
+  "description": "VSP Zero-Trust Network Simulation - Identity-Centric Security",
+  "type": "module",
+  "main": "simulate.sh",
+  "bin": {
+    "vsp-porto-zero-trust": "./simulate.sh"
+  },
+  "scripts": {
+    "simulate": "bash simulate.sh",
+    "start": "bash simulate.sh",
+    "stop": "docker compose -p vsp-zero-trust down",
+    "clean": "docker compose -p vsp-zero-trust down -v"
+  },
+  "keywords": [
+    "vsp",
+    "zero-trust",
+    "security",
+    "simulation",
+    "sovereign-systems",
+    "wireguard"
+  ],
+  "author": "VSP (Virgiawan Sagarmata Patabuga)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vspatabuga/zero-trust-network.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "simulate.sh",
+    "docker-compose.yml",
+    "config/"
+  ]
+}

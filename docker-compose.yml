@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  proxy:
+    image: nginx:alpine
+    container_name: vsp_zero_trust_proxy
+    ports:
+      - "3004:443"
+      - "3005:80"
+    volumes:
+      - ./config/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./config/certs:/etc/nginx/certs:ro
+    networks:
+      - vsp_zt_net
+
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vsp_zero_trust_vault
+    environment:
+      - WEBSOCKET_ENABLED=true
+      - SIGNUPS_ALLOWED=false
+    volumes:
+      - vault_data:/data
+    networks:
+      - vsp_zt_net
+
+  web:
+    image: nginx:alpine
+    container_name: vsp_zero_trust_web
+    ports:
+      - "3006:80"
+    volumes:
+      - ./web:/usr/share/nginx/html:ro
+    networks:
+      - vsp_zt_net
+
+networks:
+  vsp_zt_net:
+    driver: bridge
+
+volumes:
+  vault_data:
