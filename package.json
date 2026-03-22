@@ -1,6 +1,6 @@
 {
   "name": "@vspatabuga/porto-zero-trust",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "VSP Zero-Trust Network Simulation - Identity-Centric Security",
   "type": "module",
   "main": "simulate.sh",
