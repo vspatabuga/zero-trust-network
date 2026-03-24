@@ -1,6 +1,6 @@
 {
   "name": "@vspatabuga/sim-zero-trust",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "VSP Zero-Trust Network Simulation - Identity-Centric Security Architecture",
   "type": "module",
   "main": "simulate.sh",
