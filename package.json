@@ -1,25 +1,28 @@
 {
-  "name": "@vspatabuga/porto-zero-trust",
-  "version": "1.0.3",
-  "description": "VSP Zero-Trust Network Simulation - Identity-Centric Security",
+  "name": "@vspatabuga/sim-zero-trust",
+  "version": "1.0.0",
+  "description": "VSP Zero-Trust Network Simulation - Identity-Centric Security Architecture",
   "type": "module",
   "main": "simulate.sh",
   "bin": {
-    "vsp-porto-zero-trust": "./simulate.sh"
+    "vsp-sim-zero-trust": "./simulate.sh"
   },
   "scripts": {
     "simulate": "bash simulate.sh",
-    "start": "bash simulate.sh",
+    "start": "docker compose -p vsp-zero-trust up -d",
     "stop": "docker compose -p vsp-zero-trust down",
-    "clean": "docker compose -p vsp-zero-trust down -v"
+    "clean": "docker compose -p vsp-zero-trust down -v",
+    "logs": "docker compose -p vsp-zero-trust logs -f"
   },
   "keywords": [
     "vsp",
+    "sim-zero-trust",
     "zero-trust",
     "security",
     "simulation",
     "sovereign-systems",
-    "wireguard"
+    "wireguard",
+    "tailscale"
   ],
   "author": "VSP (Virgiawan Sagarmata Patabuga)",
   "license": "MIT",
@@ -33,6 +36,9 @@
   "files": [
     "simulate.sh",
     "docker-compose.yml",
-    "config/"
+    "config/",
+    "simulation/",
+    "docs/",
+    "README.md"
   ]
 }
