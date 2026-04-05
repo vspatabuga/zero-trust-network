@@ -1,5 +1,7 @@
 # 🛡️ Zero-Trust Network
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19427213.svg)](https://doi.org/10.5281/zenodo.19427213)
+
 ## 📌 Project Overview
 **Zero-Trust Network** is a prototype for an identity-centric security architecture. It replaces the traditional "trusted perimeter" with a model that assumes no implicit trust, requiring strict verification for every device and user attempting to access resources.
 
