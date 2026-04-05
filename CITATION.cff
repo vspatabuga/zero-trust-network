@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Zero-Trust Network Architecture"
+type: software
+authors:
+  - family-names: Patabuga
+    given-names: Virgiawan Sagarmata
+    affiliation: Patabuga Enterprise
+    orcid: "https://orcid.org/0009-0003-7843-0919"
+abstract: >
+  Identity-centric Zero-Trust network prototype with WireGuard, Tailscale,
+  and Cloudflare Tunnel for sovereign infrastructure. Replaces traditional
+  trusted perimeter with strict verification for every device and user.
+license: MIT
+version: "1.0.0"
+date-released: "2026-04-05"
+url: "https://github.com/patabuga/zero-trust-network"
+repository-code: "https://github.com/patabuga/zero-trust-network"
+keywords:
+  - zero-trust
+  - network-security
+  - wireguard
+  - tailscale
+  - cloudflare
+  - sovereign-infrastructure
