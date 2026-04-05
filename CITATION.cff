@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Patabuga
     given-names: Virgiawan Sagarmata
-    affiliation: Patabuga Enterprise
+    affiliation: Patabuga Institute
     orcid: "https://orcid.org/0009-0003-7843-0919"
 abstract: >
   Identity-centric Zero-Trust network prototype with WireGuard, Tailscale,
